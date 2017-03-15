@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script defer type="text/javascript" src="moment.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+    <script defer type="text/javascript" src="curiosity.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta charset="utf-8">
+
+    <title>Curiosity Images</title>
+  </head>
+  <body class="container">
+
+    <nav>
+      <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">Red Rovers</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="curiosity.html">Curiosity</a></li>
+            <li><a href="Opportunity.html">Opportunity</a></li>
+            <li><a href="Spirit.html">Spirit</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-nav">
+            <li><a href="">Curiosity</a></li>
+            <li><a href="#">Oppertunity</a></li>
+            <li><a href="#">Spirit</a></li>
+          </ul>
+      </div>
+  </nav>
+
+  <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="imgs/curiosity_html_main.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Curiosity<i class="material-icons right">Mission Manifest</i></span>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Curiosity Mission Manifest<i class="material-icons right">close</i></span>
+        <ul id="curiosity-manifest-collection" class="collection">
+          <li>Launch Date:</li>
+        </ul>
+      </div>
+    </div>
+
+</div>
+    <div id="curiosity-img-check">
+      <img hidden id="check-img" src="http://placekitten.com/600/300" alt="wat">
+    </div>
+
+  </body>
+</html>

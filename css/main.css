@@ -1,0 +1,7 @@
+#hero-image {
+  opacity: 0.5;
+}
+
+.card-img > img{
+  max-height: 177px;
+}
