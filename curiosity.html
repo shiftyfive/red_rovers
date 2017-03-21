@@ -10,7 +10,9 @@
 
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 
-  <script defer type="text/javascript" src="curiosity.js"></script>
+  <script defer type="text/javascript" src="exif.js"></script>
+
+  <script defer type="text/javascript" src="curiosityRefactor.js"></script>
 
   <link rel="stylesheet" href="css/main.css">
 
@@ -26,7 +28,7 @@
       <a href="index.html" class="brand-logo">Red Rovers</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="curiosity.html">Curiosity</a></li>
+        <li class="active"><a href="curiosity.html">Curiosity</a></li>
         <li><a href="Opportunity.html">Opportunity</a></li>
         <li><a href="Spirit.html">Spirit</a></li>
       </ul>
@@ -71,7 +73,7 @@
             <br>
           </div>
           <div class="card-action">
-            <a class="waves-effect waves-light btn picButton" id="mast"  href='#'>Click To View Images</a>
+            <a class="waves-effect waves-light btn picButton" id="mast" href='#'>Click To View Images</a>
           </div>
         </div>
       </div>
@@ -138,6 +140,10 @@
 
     </div>
     <!--Would like to add div that checks the image dimension-->
+
+    <div hidden>
+        <img id="img-to-check" src="http://lorempixel.com/400/200" alt="Div for checking image width.">
+    </div>
 
 </body>
 
