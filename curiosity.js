@@ -23,13 +23,6 @@ $(document).ready(function() {
         console.log(results)
         roverObj = results.photos
 
-        for (var i = 0; i < 4; i++) {
-          if (i < 4) {
-            $(".rover-pics").append(`<div class="col s12 m3"><img style="max-height:220px;max-width:257px;padding:10px;" src=${roverObj[i]["img_src"]}></div>`)
-          } else {
-            return roverObj;
-          }
-        }
       },
       error: function(error) {
         console.error(error);
