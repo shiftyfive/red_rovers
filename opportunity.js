@@ -6,8 +6,9 @@ let proxy = "https://galvanize-cors-proxy.herokuapp.com/"
 function appendCarousel (camera){
   let promise = $.ajax({
     method: "GET",
-    url: `${proxy}https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2016-1-5&camera=${camera}&api_key=xcbRk9wwyuts3TVWoW6Yh0SigQ0JcRUegzSAwaZi`,
+    url: `${proxy}https://api.nasa.gov/mars-photos/api/v1/rovers/opportunity/photos?earth_date=2011-1-5&camera=${camera}&api_key=xcbRk9wwyuts3TVWoW6Yh0SigQ0JcRUegzSAwaZi`,
     success: function(results) {
+      console.log(results.photos)
       roverObj = results.photos;
 
     },
@@ -34,7 +35,3 @@ function callAjax(event) {
   let selectedCamera = $(event.target).attr("id");
   appendCarousel(selectedCamera);
 };
-
-$( ".trigger" ).on( "click", function() {
-  $( ".result" ).load( "ajax/test.html" );
-});

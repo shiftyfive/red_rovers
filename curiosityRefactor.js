@@ -34,7 +34,3 @@ function callAjax(event) {
   let selectedCamera = $(event.target).attr("id");
   appendCarousel(selectedCamera);
 };
-
-$( ".trigger" ).on( "click", function() {
-  $( ".result" ).load( "ajax/test.html" );
-});
