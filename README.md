@@ -9,7 +9,7 @@ Is a simple static site that allows you to view photos taken by mars rovers
 * Materiliaze CSS
 * Nasa Open APIs 🚀
 
-
+## Authors
 * **Joshua Warren** - *Initial work* - [shiftyfive](https://github.com/shiftyfive)
 
 ## License Info
